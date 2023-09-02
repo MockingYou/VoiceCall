@@ -48,7 +48,7 @@
                     android:textColor="@color/white"
                     android:textColorHighlight="@color/white"
                     android:textColorHint="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="15sp" />
                 <androidx.recyclerview.widget.RecyclerView
                     android:visibility="gone"
                     android:id="@+id/apartments_recycler"
@@ -60,9 +60,34 @@
                     android:padding="14dp"
                     />
 
+
             </LinearLayout>
 
         </LinearLayout>
 
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputs_layout">
+
+            <Button
+                android:id="@+id/phone_call"
+                android:text="Apelare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"/>
+
+            <Button
+                android:text="Mesaj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

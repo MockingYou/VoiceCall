@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".VoiceCallActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/room_name"
+            android:layout_width="wrap_content"
+            android:text="Undefined"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:id="@+id/join_leave_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            app:layout_constraintTop_toBottomOf="@+id/join_leave_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/call_screen"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="100dp">
+            <Button
+                android:id="@+id/acceptCallButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Call"
+                android:onClick="onAcceptCallClick"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/denyCallButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deny Call"
+                android:onClick="onDenyCallClick"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</layout>

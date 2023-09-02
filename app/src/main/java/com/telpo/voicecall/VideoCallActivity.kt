@@ -73,7 +73,7 @@ class VideoCallActivity : AppCompatActivity()  {
 
     private fun setupVideoSDKEngine() {
         try {
-            agoraEngine = RtcEngine.create(baseContext, getString(R.string.appId), rtcEventHandler)
+            agoraEngine = RtcEngine.create(baseContext, getString(R.string.agora_appid), rtcEventHandler)
             agoraEngine?.enableVideo()
         } catch (e: Exception) {
             showMessage(e.toString())
@@ -118,8 +118,8 @@ class VideoCallActivity : AppCompatActivity()  {
             localSurfaceView?.visibility = View.VISIBLE
             agoraEngine?.startPreview()
             agoraEngine?.joinChannel(
-                getString(R.string.token),
-                getString(R.string.channel),
+                getString(R.string.agora_appid),
+                getString(R.string.agora_channel),
                 generateRandomUid(),
                 options
             )

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">VoiceCall</string>
-    <string name="token">007eJxTYHhn1LO94/F1q9gL3Wd+r8jQZNkp0WV/+r1i1NXeg5Oy+DYoMJiZGJkmJ1sYJqcaWpokJxkmpVpYJBqbGqcZWpgYpJon8lx4mtIQyMigsnArMyMDBIL4zAwpqWUMDADEwCDT</string>
-    <string name="appId">6425cc81ce194cb1be88a353f1840e7a</string>
-    <string name="channel">dev</string>
+    <string name="agora_token">007eJxTYPDPVM36+2uNJnfmhN9pApsefir0vh4TxM7xyvfX+1lzly1TYDAzMTJNTrYwTE41tDRJTjJMSrWwSDQ2NU4ztDAxSDVP/HPwY0pDICOD4c5eJkYGCATxmRlSUssYGACt+CF1</string>
+    <string name="agora_appid">6425cc81ce194cb1be88a353f1840e7a</string>
+    <string name="agora_channel">dev</string>
 </resources>
